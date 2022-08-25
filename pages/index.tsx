@@ -6,7 +6,7 @@ const Home: NextPage = () => {
     <>
       <h1>Welcome to this webapp!</h1>
       <p>To view your account click on</p>
-      <Link href='/protected'><a>Account</a></Link>
+      <Link href='/account'><a>Account</a></Link>
     </>
     )
 }

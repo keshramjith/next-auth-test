@@ -20,7 +20,7 @@ const SignIn = ({ providers }) => {
         <h2>Or sign in with: </h2>
         {Object.values(providers).map(provider => (
           <div key={provider.name}>
-            <button onClick={() => signIn(provider.id, { callbackUrl: `${window.location.origin}/protected` })}>Sign in with {provider.name}</button>
+            <button onClick={() => signIn(provider.id, { callbackUrl: `${window.location.origin}/account` })}>Sign in with {provider.name}</button>
           </div>  
         ))}
       </div>
