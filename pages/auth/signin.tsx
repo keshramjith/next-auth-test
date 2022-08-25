@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { signIn, getProviders } from 'next-auth/react'
+import { NextAuthOptions } from 'next-auth'
 import { GetServerSideProps } from 'next'
 
-const SignIn = ({ providers }) => {
+const SignIn = ({ providers }: NextAuthOptions) => {
   const [username, setUsername] = useState<string>('')
   const [password, setPassword] = useState<string>('')
 

@@ -1,9 +1,9 @@
 import { GetServerSideProps } from "next"
-import { unstable_getServerSession } from "next-auth"
+import { unstable_getServerSession, Session } from "next-auth"
 import { authOptions } from "./api/auth/[...nextauth]"
 import { signOut } from "next-auth/react"
 
-const Protected = ({ user }) => {
+const Protected = ({ user }: Session) => {
   if (user) {
     return (
       <>
